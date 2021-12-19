@@ -33,7 +33,7 @@ fun Diagram.processStraights(): Diagram {
     lines.filterStraight().forEach { line ->
         line.xRange().forEach { x ->
             line.yRange().forEach { y ->
-                grid[y][x] = grid[y][x].inc()
+                grid[y][x]++
             }
         }
     }
