@@ -20,7 +20,9 @@ fun List<String>.process(duration: Int) {
     println("--> Result: ${lifecycle.fishes.sum()} fishes after $duration days")
 }
 
-fun String.initPopulation(): Population = Population(MutableList(9) { index -> split(",").count { it.toInt() == index }.toLong() })
+fun String.initPopulation(): Population =
+    Population(MutableList(9) { index -> split(",").count { it.toInt() == index }.toLong() })
+
 fun Population.iterate() {
     fishes = MutableList(fishes.size) { index ->
         when (index) {

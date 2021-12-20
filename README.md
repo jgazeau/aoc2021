@@ -10,3 +10,4 @@
 * [Day4](./src/main/kotlin/day4)
 * [Day5](./src/main/kotlin/day5)
 * [Day6](./src/main/kotlin/day6)
+* [Day7](./src/main/kotlin/day7)
